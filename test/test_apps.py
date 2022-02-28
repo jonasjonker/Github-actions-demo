@@ -16,7 +16,7 @@ def sdf(tmp_path):
 
 def test_some_parser_output(sdf):
     assert sdf.collect() == [Row(**{
-        "value": "HELLO, WORLD!"
+        "value": "HELLO, WORD!"
     })]
 
 
