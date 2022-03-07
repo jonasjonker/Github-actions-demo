@@ -19,7 +19,7 @@ def test_some_parser_output(sdf):
         "value": "HELLO, WORLD!"
     })]
 
-
+@pytest.mark.smoke
 def test_some_parser_schema(sdf):
     assert sdf.schema == T.StructType([
         T.StructField("value", T.StringType(), True),
